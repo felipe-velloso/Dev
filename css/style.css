@@ -1,0 +1,290 @@
+/* YOUR CUSTOM STYLES */
+
+body{
+    color: #4B515D;
+    font-family: -apple-system,BlinkMacSystemFont,"San Francisco","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+a {
+    color: #78909c;
+}
+a:hover {
+    color: #546e7a;
+}
+
+hr {
+    margin: 0;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+header {
+    padding: 4rem 0 0;
+}
+
+header .info {
+    margin: 2rem 0;
+}
+
+header .links {
+    color: #4DD9CD;
+}
+
+.links a {
+    padding-right: 1em;
+}
+
+
+
+
+
+.gallery {
+    padding-top: 2rem;
+}
+/*
+aside {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+aside.is_stuck {
+    opacity: 1;
+}
+*/
+footer {
+    padding: 12em 0;
+}
+
+footer .links a {
+    font-size: 1.5rem;
+}
+
+.portfolio {
+    padding: 0 4rem;
+}
+@media (max-width: 74.9em) {
+    .portfolio {
+        padding: 0 2rem;
+    }
+}
+
+.portfolio.standby {
+    overflow: hidden;
+}
+
+.portfolio .standby-mask {
+    color: #90a4ae;
+    opacity: 0;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+.portfolio.standby .standby-mask {
+    position: fixed;
+    opacity: 1;
+    z-index: 1000;
+}
+
+header .photo {
+    max-width: 160px;
+}
+
+header .photo .mask {
+    background-color: transparent;
+}
+
+header .row {
+    padding: 0 !important;
+}
+
+.row ~ .row {
+    padding-top: 30px;
+}
+
+.row .column {
+    height: 100%;
+}
+
+aside .view.box {
+    margin-bottom: 30px;
+}
+
+aside .view.box .info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+aside .info .project {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+aside .info .title {
+    font-size: 17px;
+}
+aside .link {
+    display: inline-block;
+    margin: 20px 15px 40px;
+}
+
+.sesh .view.box .info {
+    color: #009995;
+}
+.sesh .link {
+    color: #16C5C0;
+}
+.sesh .link:hover {
+    color: #009995;
+}
+
+.bubbl .view.box .info {
+    color: #4D4790;
+}
+.bubbl .link {
+    color: #614DA0;
+}
+.bubbl .link:hover {
+    color: #4D4790;
+}
+
+
+article hr {
+    margin: 4rem 0 2rem;
+}
+
+@media (max-width: 47.9em) {
+    aside .view.box {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    article {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+
+@media (max-width: 47.9em) {
+    footer h1 {
+        font-size: 1.5rem;
+    }
+    footer .links a {
+        font-size: 1.125rem;
+    }
+}
+
+
+
+.view img {
+    width: 100%;
+}
+
+.view .round {
+    border-radius: 50%;
+}
+
+.box.link {
+    background: #eceff1;
+}
+.box .link {
+    position: absolute;
+    display: block;
+    top: 45%;
+}
+
+.box ~ .box {
+    margin-top: 30px;
+}
+
+.thumb {
+    width: 100%;
+}
+.thumb.faded {
+    opacity: 0;
+}
+
+.wrapper {
+    border: 1px solid #F0F0F0;
+}
+
+.content.preview {
+    position: fixed;
+    width: calc(100% - 40px);
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 10000;
+    opacity: 0;
+    transition: all .75s ease-in-out;
+}
+.content.preview.open {
+    left: 0;
+    opacity: 1;
+}
+.content.preview .window {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: all 2.25s ease-in-out;
+}
+.content.preview.open .window {
+    left: 40px;
+}
+
+.content.preview .overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: 0;
+    height: 100%;
+    opacity: 0;
+}
+.content.preview.open .overlay {
+    left: 0;
+    opacity: 1;
+}
+.content.preview .overlay:nth-child(1) {
+    transition: all 1s ease-in-out;
+}
+.content.preview .overlay:nth-child(2) {
+    transition: all 1.25s ease-in-out;
+}
+.content.preview .overlay:nth-child(3) {
+    transition: all 1.5s ease-in-out;
+}
+.content.preview .overlay:nth-child(4) {
+    transition: all 1.75s ease-in-out;
+}
+
+.content.preview .back-link {
+    position: absolute;
+    left: 100%;
+    width: 40px;
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity .25s ease-in-out, left 2.5s ease-in-out;
+}
+.content.preview .back-link:hover {
+    background: rgba(255,255,255,.25);
+}
+.content.preview .back-link .fa {
+    display: block;
+}
+.content.preview.open .back-link {
+    left: 0;
+    opacity: 1;
+}
+
